@@ -13,6 +13,13 @@ p, li { line-height: 1.2; }
     color: #fff;
 }
 
+.blue-bg a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.blue-bg a:hover { color: #ffe7aa; }
+
 .blue-h1 { color: #0d2f81;}
 
 .blue-h1 span { color: #000;}
@@ -21,6 +28,13 @@ p, li { line-height: 1.2; }
     background: #ffe7aa;
     color: #000;
 }
+
+.tan-bg a {
+    color: #000;
+    text-decoration: none;
+}
+
+.tan-bg a:hover { color: #0d2f81; }
 
 .tan-h1 { color: #ffe7aa; }
 
@@ -50,17 +64,10 @@ p, li { line-height: 1.2; }
     padding-inline-start: 0;
 }
 
-.directory-links a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.directory-links a:hover { color: #ffe7aa; }
-
 .persona-details {
     display: flex;
     justify-content: center;
-    margin: 3rem 0;
+    margin: 2rem 0;
     text-align: left;
 }
 
@@ -68,4 +75,22 @@ p, li { line-height: 1.2; }
     border: 8px solid #000;
     margin-right: 2rem;
     max-width: 22rem;
+}
+
+.footer {
+    display: grid;
+    grid: "previous home next" / 1fr 3rem 1fr;
+    column-gap: 1rem;
+}
+
+.home { grid-area: home; }
+
+.next {
+    grid-area: next;
+    text-align: left;
+}
+
+.previous {
+    grid-area: previous;
+    text-align: right;
 }
