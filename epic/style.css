@@ -41,6 +41,8 @@ p, li { line-height: 1.2; }
 .tan-h1 span { color: #fff;}
 
 .container {
+    display: grid;
+    grid-template-rows: auto 1fr 150px;
     margin: 0 auto;
     max-width: 1080px;
     min-height: 100vh;
@@ -69,7 +71,6 @@ p, li { line-height: 1.2; }
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 2rem 0;
     text-align: left;
 }
 
@@ -81,11 +82,17 @@ p, li { line-height: 1.2; }
 
 .persona-details div { max-width: 650px; }
 
+.user-story {
+    align-self: center;
+    max-width: 750px;
+    margin: auto;
+}
+
 .footer {
     display: grid;
     grid: "previous home next" / 1fr 3rem 1fr;
     column-gap: 1rem;
-    margin-top: 2.5rem;
+    margin-top: 2rem;
 }
 
 .home { grid-area: home; }
