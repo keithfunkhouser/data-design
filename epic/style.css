@@ -49,7 +49,7 @@ p, li { line-height: 1.2; }
     padding: 2rem;
 }
 
-.wide { max-width: 1280px;}
+.wide { max-width: 1200px;}
 
 .title {
     display: flex;
@@ -90,10 +90,15 @@ p, li { line-height: 1.2; }
     margin: auto;
 }
 
-.use-case, .conceptual-model {
+.use-case {
     align-self: center;
     margin-top: 1rem;
     text-align: left;
+}
+
+.conceptual-model {
+    align-self: center;
+    margin-top: 1rem;
 }
 
 .entities-attributes {
@@ -101,6 +106,8 @@ p, li { line-height: 1.2; }
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 0.5rem 0 2rem;
+    text-align: left;
 }
 
 .entities-attributes div {
@@ -109,8 +116,10 @@ p, li { line-height: 1.2; }
 
 .entities-attributes ul {
     list-style: none;
-    padding-inline-start: 1rem;
+    padding-inline-start: 0;
 }
+
+.erd { margin-top: 4rem; }
 
 .footer {
     display: grid;

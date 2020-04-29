@@ -18,9 +18,11 @@
                 <h1 class="tan-h1"><span>Conceptual</span> Model</h1>
             </div>
             <div class="conceptual-model">
+                <h3>Entities and Attributes</h3>
                 <div class="entities-attributes">
                     <div>
                         <p><strong>User</strong></p>
+                        <hr/>
                         <ul>
                             <li>userId (primary key)</li>
                             <li>userActivationToken</li>
@@ -33,17 +35,20 @@
                     </div>
                     <div>
                         <p><strong>Folder</strong></p>
+                        <hr/>
                         <ul>
                             <li>folderId (primary key)</li>
                             <li>folderUserId (foreign key)</li>
                             <li>folderDateCreated</li>
                             <li>folderDateModified</li>
                             <li>folderName</li>
+                            <li>folderPath</li>
                             <li></li>
                         </ul>
                     </div>
                     <div>
                         <p><strong>File</strong></p>
+                        <hr/>
                         <ul>
                             <li>fileId (primary key)</li>
                             <li>fileUserId (foreign key)</li>
@@ -51,22 +56,33 @@
                             <li>fileDateUploaded</li>
                             <li>fileDateModified</li>
                             <li>fileName</li>
+                            <li>filePath</li>
                             <li></li>
                         </ul>
                     </div>
                     <div>
                         <p><strong>Share</strong></p>
+                        <hr/>
                         <ul>
                             <li>shareUserId (foreign key)</li>
                             <li>shareFolderId (foreign key)</li>
                             <li>shareEmail</li>
+                            <li>shareLink</li>
                             <li>shareMessage</li>
                             <li>sharePermissions</li>
                         </ul>
                     </div>
                 </div>
+                <h3>Relations</h3>
+                <div>
+                    <p>One <strong>User</strong> can create many <strong>Folders</strong> - (1 to many)</p>
+                    <p>One <strong>User</strong> can upload many <strong>Files</strong> - (1 to many)</p>
+                    <p>Many <strong>Files</strong> can belong to many <strong>Folders</strong> - (many to many)</p>
+                    <p>Many <strong>Users</strong> can share many <strong>Folders</strong> - (many to many)</p>
+                </div>
                 <div class="erd">
-
+                    <h3>Entity Relationship Diagram</h3>
+                    <img src="images/erd.svg" alt="Entity Relationship Diagram">
                 </div>
             </div>
             <div class="footer">
