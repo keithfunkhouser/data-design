@@ -49,6 +49,8 @@ p, li { line-height: 1.2; }
     padding: 2rem;
 }
 
+.wide { max-width: 1280px;}
+
 .title {
     display: flex;
     flex-wrap: wrap;
@@ -88,10 +90,26 @@ p, li { line-height: 1.2; }
     margin: auto;
 }
 
-.use-case {
+.use-case, .conceptual-model {
     align-self: center;
     margin-top: 1rem;
     text-align: left;
+}
+
+.entities-attributes {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.entities-attributes div {
+    padding: 1rem;
+}
+
+.entities-attributes ul {
+    list-style: none;
+    padding-inline-start: 1rem;
 }
 
 .footer {

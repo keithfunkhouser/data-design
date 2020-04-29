@@ -10,15 +10,64 @@
 </head>
 <body>
     <main class="blue-bg">
-        <div class="container">
+        <div class="container wide">
             <div class="title">
                 <a href="https://www.dropbox.com" target="_blank" rel="noopener noreferrer">
                     <img src="images/dropbox-logo-tan.svg" alt="Dropbox Logo">
                 </a>
-                <h1 class="tan-h1"><span>Conceptual</span>&nbsp;Model</h1>
+                <h1 class="tan-h1"><span>Conceptual</span> Model</h1>
             </div>
-            <div>
-                <p>Phase 2 of data design goes here.</p>
+            <div class="conceptual-model">
+                <div class="entities-attributes">
+                    <div>
+                        <p><strong>User</strong></p>
+                        <ul>
+                            <li>userId (primary key)</li>
+                            <li>userActivationToken</li>
+                            <li>userEmail</li>
+                            <li>userHash</li>
+                            <li>userName</li>
+                            <li>userRole</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p><strong>Folder</strong></p>
+                        <ul>
+                            <li>folderId (primary key)</li>
+                            <li>folderUserId (foreign key)</li>
+                            <li>folderDateCreated</li>
+                            <li>folderDateModified</li>
+                            <li>folderName</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p><strong>File</strong></p>
+                        <ul>
+                            <li>fileId (primary key)</li>
+                            <li>fileUserId (foreign key)</li>
+                            <li>fileFolderId (foreign key)</li>
+                            <li>fileDateUploaded</li>
+                            <li>fileDateModified</li>
+                            <li>fileName</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p><strong>Share</strong></p>
+                        <ul>
+                            <li>shareUserId (foreign key)</li>
+                            <li>shareFolderId (foreign key)</li>
+                            <li>shareEmail</li>
+                            <li>shareMessage</li>
+                            <li>sharePermissions</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="erd">
+
+                </div>
             </div>
             <div class="footer">
                 <a class="previous" href="interaction-flow.html">Interaction Flow</a>
