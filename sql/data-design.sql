@@ -1,7 +1,7 @@
 ALTER DATABASE kfunkhouser CHARACTER SET utf8 COLLATE utf8_unicode_ci;
 
-DROP TABLE IF EXISTS share;
-DROP TABLE IF EXISTS file;
+DROP TABLE IF EXISTS `share`;
+DROP TABLE IF EXISTS `file`;
 DROP TABLE IF EXISTS folder;
 DROP TABLE IF EXISTS `user`;
 
@@ -28,7 +28,7 @@ CREATE TABLE folder (
 	PRIMARY KEY(folderId)
 );
 
-CREATE TABLE file (
+CREATE TABLE `file` (
 	fileId BINARY(16) NOT NULL,
 	fileUserId BINARY(16) NOT NULL,
 	fileFolderId BINARY(16) NOT NULL,
@@ -43,7 +43,7 @@ CREATE TABLE file (
 	PRIMARY KEY(fileId)
 );
 
-CREATE TABLE share (
+CREATE TABLE `share` (
 	shareUserId BINARY(16) NOT NULL,
 	shareFolderId BINARY(16) NOT NULL,
 	shareEmail VARCHAR(128) NOT NULL,
