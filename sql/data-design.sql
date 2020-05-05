@@ -53,5 +53,6 @@ CREATE TABLE `share` (
 	INDEX(shareUserId),
 	INDEX(shareFolderId),
 	FOREIGN KEY(shareUserId) REFERENCES `user`(userId),
-	FOREIGN KEY(shareFolderId) REFERENCES folder(folderId)
+	FOREIGN KEY(shareFolderId) REFERENCES folder(folderId),
+	PRIMARY KEY(shareUserId, shareFolderId)
 );
