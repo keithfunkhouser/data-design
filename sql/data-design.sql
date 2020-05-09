@@ -99,3 +99,8 @@ INSERT INTO folder(folderID, folderUserId, folderDateCreated, folderName, folder
 SELECT * FROM `user` WHERE userId = UNHEX('1cc4c7b658cf419a8dcba66d4583bb4d');
 
 SELECT userName FROM folder INNER JOIN `user` ON folder.folderUserId = `user`.userId WHERE folderName = 'renders';
+
+
+-- DDC-Twitter hypothetical number of likes for a specific tweet
+
+SELECT COUNT(*) AS likeCount FROM `like` WHERE likeTweetId = UNHEX('8ac2ca7fdd9d465caae929f901a9ec5a');
